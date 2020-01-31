@@ -1,0 +1,262 @@
+﻿body {
+    background-color:#f7c1f7;
+    font-family: 'Trebuchet MS',Arial,'Comic Sans MS';
+}
+
+*{
+    margin:0;
+    padding:0;
+    border:0;
+}
+
+a{
+    text-decoration:none;
+    color:#555;
+}
+
+a:hover {
+    color: blueviolet;
+}
+.wrapper{
+    width:960px;
+    height:auto;
+    margin:0 auto;
+}
+
+header{
+    float:left;
+    width:100%;
+    height:45px;
+    background-color:#fff;
+}
+
+    header .logo {
+        float: left;
+        width: 89px;
+        height: 45px;
+        border-right: 1px solid #ff0000;
+        text-align: center;
+        line-height: 45px;
+        color: blueviolet;
+    }
+
+    header nav {
+        float: left;
+        width: 609px;
+        height: 45px;
+        border-right: 1px solid #ff0000;
+        line-height: 45px;
+    }
+
+        header nav ul{
+            list-style:none;
+        }
+            header nav ul li {
+                float: left;
+                margin: 0 10px;
+                color:#00000;
+            }
+
+                header nav ul li.konular-wrap{
+                    position:relative;
+                } 
+                
+                    header nav ul li.konular-wrap .konular{
+                        display:none;
+                        position: absolute;
+                        width:200px;
+                        height:auto;
+                        background-color:#fff;
+                    }
+
+        header .arama-wrap {
+            float: left;
+            width: 260px;
+            height: 45px;
+        }
+
+            header .arama-wrap .txtArama{
+                float: left;
+                width: 190px;
+                height: 25px ;
+                padding:10px;
+            }
+
+            header .arama-wrap .btnArama {
+                float: left;
+                width: 49px;
+                height: 45px;
+                background-color: blueviolet;
+                text-align: center;
+                color: #fff;
+            }
+
+.banner {
+    float: left;
+    margin-top:45px;
+    width: 960px;
+    height: 360px;
+    background-image: url("/image/background-mor5.jpg");
+    background-size:cover;
+    line-height: 360px;
+    text-align:center;
+    color:#fff;  
+}
+
+.sol {
+    float: left;
+    width: 285px;
+    height: auto;
+    margin-top: 45px;
+    
+}
+    .sol .hizli-kayit {
+        float: left;
+        width: 285px;
+        height: auto;
+        background-image: url('image/background-mor5.jpg');
+    }
+
+        .sol .hizli-kayit .ust {
+            float: left;
+            width: 285px;
+            height: 44px;
+            line-height: 44px;
+            text-align: center;
+            color:blueviolet;
+            border-bottom: 1px solid #808080;
+            background-color: #fff;
+        }
+
+        .sol .hizli-kayit .alt {
+            float: left;
+            width: 250px;
+            padding:17.5px;
+            height: 170px;
+            border-bottom: 1px solid #808080;
+            background-color:#fff;
+            
+        }
+
+            .sol .hizli-kayit .alt .sifre {
+                margin-top: 15px;
+            }
+
+            .sol .hizli-kayit .alt .txtBox{
+                width: 248px;
+                height: 28px;
+                border: 1px solid #808080;
+                padding-left:4px;
+            }
+
+            .sol .hizli-kayit .alt .btnKayit {
+                float: left;
+                width: 100px;
+                height: 40px;
+                line-height: 40px;
+                text-align: center;
+                color: #fff;
+                cursor: pointer;
+                background-color: blueviolet;
+                margin-top: 10px;
+            }
+                .sol .hizli-kayit .alt .btnKayit:hover {
+                    background-color: #f7c1f7;
+                }
+
+            .sol .hizli-kayit .alt .btnGiris {
+                float: right;
+                width: 100px;
+                height: 40px;
+                line-height: 40px;
+                text-align: center;
+                color: #fff;
+                cursor: pointer;
+                background-color: blueviolet;
+                margin-top: 10px;
+            }
+
+                .sol .hizli-kayit .alt .btnGiris:hover {
+                    background-color: #f7c1f7;
+                }
+
+            .sol .hizli-kayit .alt .btnCikis {
+                float: right;
+                width: 100px;
+                height: 40px;
+                line-height: 40px;
+                text-align: center;
+                color: #fff;
+                cursor: pointer;
+                background-color: blueviolet;
+                margin-top: 10px;
+            }
+
+            .sol .hizli-kayit .alt .btnCikis:hover {
+                background-color: #f7c1f7
+            }
+
+        .sol .duyurular {
+            float: left;
+            width: 285px;
+            height: auto;
+            margin-top: 45px;
+            background-image: url('image/background-mor5.jpg');
+        }
+
+        .sol .duyurular .ust {
+            float: left;
+            width: 285px;
+            height: 44px;
+            line-height: 44px;
+            text-align: center;
+            color: blueviolet;
+            border-bottom: 1px solid #808080;
+            background-color: #fff;
+        }
+
+        .sol .duyurular .alt {
+            float: left;
+            width: 250px;
+            padding: 17.5px;
+            height: auto;
+            border-bottom: 1px solid #808080;
+            background-color: #fff;
+        }
+            .sol .duyurular .alt .duyuru-wrap{
+                float: left;
+                width: 100%;
+                height: 150px;
+                background-color: @white;S;
+                margin: 10px 0;
+            }
+
+
+.icerik {
+    float: right;
+    width: 625px;
+    height: auto;
+    background-color: #fff;
+    margin-top: 45px;
+    //overflow-y: scroll;
+  
+}
+
+footer {
+    float: right;
+    width: 100%;
+    height: 60px;
+    background-color: #808080;
+    margin-top: 45px;
+    text-align: center;
+    line-height: 60px;
+    color: #fff;
+}
+
+.pnlKullanici {
+    width:250px;
+    background-color:white;
+    color:#5d0f5d;
+    padding:15px;
+
+}

@@ -1,0 +1,211 @@
+﻿body {
+    background-color: #8fe6d2;
+    font-family: 'Trebuchet MS',Arial,'Comic Sans MS';
+}
+
+* {
+    margin:0;
+    padding:0;
+    border:0;
+}
+
+a {
+    text-decoration: none;
+    color: #555;
+}
+
+a:hover{
+    color: #999; 
+}
+
+#wrapper{
+    width:960px;
+    height:auto;
+    margin:0 auto;
+ }
+
+header{
+    float: left;
+    width:100%;
+    height:45px;
+    background-color: #fff;
+}
+
+header .logo{
+    float:left;
+    width:89px;
+    height: 45px; 
+    border-right:1px solid #ff0000;
+    text-align:center;
+    line-height:45px ;
+    color:#990000; 
+}
+
+header nav{
+    float:left;
+    width:609px;
+    height:45px;
+    border-right:1px solid #ff0000;
+    line-height:45px;
+ }
+
+header nav ul{
+    list-style:none;
+}
+
+header nav ul li{
+    float:left;
+    margin:0 10px;
+    color:#555;
+}
+
+header nav ul li.konular-wrap{
+    position:relative; 
+}
+
+    header nav ul li.konular-wrap .konular {
+        display:none; 
+        position: absolute;
+        width:200px;
+        height:auto;
+        background-color:azure;
+    }
+
+header .arama-wrap {
+    float:left;
+    width:260px;
+    height:45px;
+}
+
+header .arama-wrap .txtArama{
+    float:left;
+    width:190px;
+    padding:10px;
+    height:25px;
+}
+
+header .arama-wrap .btnArama {
+    float: left;
+    width: 49px;
+    height: 45px;
+    border-left: 1px solid #ff0000;
+}
+
+.banner {
+    float:left;
+    margin-top:45px;
+    width:960px;
+    height:360px;
+    line-height:360px; 
+    text-align:center;
+    font-size: 56px;
+    color:#fff;
+    background-image:url("/images/2.jpg");
+    background-size:cover;
+}
+
+.sol-taraf {
+    float:left;
+    width:285px;
+    height:auto;
+    margin-top:45px;
+}
+
+    .sol-taraf .hizli-kayit {
+        float: left;
+        width: 285px;
+        height: auto;
+        background-image: url("/images/2.jpg");
+    }
+        .sol-taraf .hizli-kayit .ust{
+            float:left;
+            width:285px;
+            line-height:44px;
+            height:44px;
+            border-bottom:1px solid #555;
+            padding-left:15px;
+        }
+
+        .sol-taraf .hizli-kayit .alt {
+            float: left;
+            width: 250px;
+            padding:17.5px;
+            height: 190px;
+            border-bottom: 1px solid #ccc;
+        }
+        .sol-taraf .hizli-kayit .alt .sifre {
+            margin-top:15px;
+        }
+        .sol-taraf .hizli-kayit .alt .textBox{
+            width:228px;
+            padding: 10px;
+            height:18px;
+            border:1px solid #ccc;  
+        }
+
+        .sol-taraf .hizli-kayit .alt .btnKayit {
+            float: right;
+            width: 100px;
+            height: 40px;
+            line-height:40px;
+            text-align:center;
+            color:#fff;
+            background-color:lightseagreen;
+            margin-top:10px;
+        }
+
+    .sol-taraf .duyurular {
+        float: left;
+        width: 285px;
+        height: 185px;
+        margin-top: 45px;
+        background-image: url("/images/2.jpg");
+    }
+        .sol-taraf .duyurular .ust {
+            float: left;
+            width: 285px;
+            line-height: 44px;
+            height: 44px;
+            border-bottom: 1px solid #555;
+            padding-left: 15px;
+        }
+
+        .sol-taraf .duyurular .alt {
+            float: left;
+            width: 250px;
+            padding: 17.5px;
+            height: auto;
+            border-bottom: 1px solid #ccc;
+            color:#555;
+            background-color:#fff;
+        }
+        .sol-taraf .duyurular .alt .duyuru-wrap{
+            float:left;
+            height:auto;
+            width:250px;
+            background-color:#fff;
+            margin-top:10px 0;
+        }
+
+            .sol-taraf .duyurular .alt .duyuru-wrap:Hover {
+                background-color:#d5d5d5;
+            }
+
+  .icerik {
+    float:right;
+    width:625px;
+    height:500px;
+    background-color:#fff;
+    margin-top:45px;
+}
+
+footer {
+    float:left;
+    width:100%;  
+    height:60px;
+    margin-top:45px;
+    background-color:#fff;
+    text-align:center;
+    line-height:60px;
+    color: #555;
+}

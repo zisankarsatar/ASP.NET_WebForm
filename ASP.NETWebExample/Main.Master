@@ -1,0 +1,127 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="main.Master.cs" Inherits="ASP.NETWebExample.Main" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Görsel Eğitim</title>
+    <link href="/style.css" rel="stylesheet"/>
+    <script src="https://code.jquery.com/jquery-2.0.3.min.js" ></script>
+    
+
+    <script type="text/javascript">
+    $("document ").ready(function () {
+        $("header nav ul li.konular-wrap").mouseover(function () {
+            $("header nav ul li.konular-wrap .konular").css("display", "block")
+        });
+
+        $("header nav ul li.konular-wrap").mouseleave(function () {
+            $("header nav ul li.konular-wrap .konular").css("display", "none")
+        });
+
+    });
+    </script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="wrapper">
+            <header>
+                <div class="logo"> 
+                    ZiKar
+                </div>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="/">Anasayfa</a>
+                        </li>
+                        <li class="konular-wrap">
+                            <a>Konular</a>
+                            <div class="konular">
+                                <ul>
+                                    <li><a href="programlama.aspx">Programlama</a></li>
+                                    <li><a href="web.aspx">Web Tasarım</a></li>
+                                    <li><a href="makineogrenmesi.aspx">Makine Öğrenmesi</a></li>
+                                    <li><a href="isletimsistemleri.aspx">İşletim Sistemleri</a></li>
+                                    
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="iletisim.aspx">İletişim</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="arama-wrap">
+                    <asp:TextBox ID="txtArama" CssClass="txtArama" runat="server" placeholder="Arama"/>
+                    <asp:Button ID="btnArama" Text="Ara" CssClass="btnArama" runat="server"/>
+                </div>
+            </header>
+
+            <div class="banner">
+                  Bilgi paylaştıkça çoğalır.  
+            </div>
+
+            <div class="sol">
+                <div class="hizli-kayit">
+                    <asp:Panel runat="server" ID="pnlGiris">
+                        <div class="ust">
+                            Kullanıcı Girişi
+                        </div> 
+                        <div class="alt">
+                            <div class="kullanici">
+                                <span>Kullanıcı Adı:</span>
+                                <asp:TextBox ID="txtKullaniciAdi" CssClass="txtBox" runat="server"/>
+                            </div>
+                            <div class="sifre">
+                                <span>Şifre:</span>
+                                <asp:TextBox ID="txtSifre" CssClass="txtBox" runat="server" TextMode="Password"/>
+                            </div>
+                            <!--<asp:Button ID="btnKayit" CssClass="btnKayit" Text="Kayıt OL" runat="server" />-->
+                            <a href="kayitol.aspx" class="btnKayit">Kayıt Ol</a>
+                            <asp:Button ID="btnGiris" CssClass="btnGiris" Text="Giriş" runat="server" OnClick="btnGiris_Click" />
+                            <asp:Label ID="lblSonuc" Text="" runat="server"/>
+                        </div>
+                    </asp:Panel>
+                    <asp:Panel runat="server" ID="pnlKullanici" CssClass="pnlKullanici">
+                        Hoşgeldin <asp:Label ID="lblKullaniciAdi" Text="" runat="server" /><br />
+                        <asp:Button ID="btnCikis" Text="Çıkış" runat="server" onclick="btnCikis_Click" CssClass="btnCikis"/>
+                    </asp:Panel>
+                </div>
+                <div class="duyurular">
+                    <div class="ust">
+                        Duyuru
+                    </div>
+                    <div class="alt">
+                        <asp:TextBox ID="txtBaslik" runat="server" />
+                        <asp:TextBox ID="txtDuyuru" runat="server" />
+                        <asp:TextBox ID="txtTarih" runat="server" />
+                        <%--<asp:ListView ID="lstDuyuru" runat="server">
+                            <ItemTemplate>
+                                <div class="duyuru-wrap">
+                                    
+                                    <%--<asp:Label Text="<%# Eval("Baslik") %>" runat="server"/> <br />
+                                    <asp:Label Text="<%# Eval("Duyuru") %>" runat="server"/> <br />
+                                    <asp:Label Text="<%# Eval("Tarih") %>" runat="server"/>
+                                </div>
+                            </ItemTemplate>
+                        </asp:ListView>--%>
+                                        
+                    </div>
+               </div>
+            </div>
+            <div class="icerik">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <footer>
+                ASP.NET Örneğidir(2020). Sertaç Yarbaş Tasarımı.
+            </footer>
+        </div>
+            
+       
+    </form>
+</body>
+</html>
