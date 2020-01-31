@@ -2,11 +2,11 @@
 
 ASP.Net , Web Form ve Master Page
 
-ASP.Net Web From ile geliştirme yaparken HTML5, JQuery, Master Page ten yararlanarak, kullanıcı girişi ve duyruları kaydetmek için
-MsSql veritabını kullandım.
+ASP.Net Web From ile geliştirme yaparken HTML5, JQuery, Master Page ten yararlanarak, kullanıcı girişi ve duyuruları kaydetmek için
+MsSql veritabanını kullandım.
 Basit Web sayfası örneğidir.
 
-## Uyulama ile ilgili görseller
+## Uygulama ile ilgili görseller
 
 <h4>Ansayfa</h4>
 Açılan konular kısmından ilgili sayfaya erişilir.
